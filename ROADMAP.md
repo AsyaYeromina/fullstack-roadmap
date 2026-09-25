@@ -6,7 +6,7 @@ One checklist for moving from frontend work to fullstack development. Start at t
 
 1. On a weekday, study one unchecked core subtopic. Spend up to 15–20 minutes on a small practical task; the group prompt below is a starting point.
 2. Add a section with the same subtopic ID to [NOTES.md](NOTES.md): your short cheatsheet, what you did, and how it felt (easy, hard, boring, or your own words).
-3. Commit your notes. Then check off that subtopic. The next reminder advances only after a note commit for the current ID.
+3. Commit your notes. Then check off that subtopic. The next reminder advances after a note commit for the current ID, even if you have not updated the checkbox yet.
 4. Record skipped days in [STUDY_LOG.md](STUDY_LOG.md); a missed day does not move the checklist.
 
 The 321 core subtopics below come from the supplied JSX curriculum, in its original order and wording. At one subtopic each weekday, they take about 64 weeks before the added steps. The original phase week estimates were shorter than this pace, so progress follows checkboxes rather than those estimates.
