@@ -22,7 +22,7 @@ Help the learner become a fullstack developer through one Markdown checklist, sm
 
 ## Maintaining the roadmap
 
-- Preserve every original JSX curriculum subtopic and its order. Add related topics under the closest existing group and keep source links nearby.
+- Preserve every original curriculum subtopic and its order, using `sources/fullstack-curriculum.md` as the reference. Add related topics under the closest existing group and keep source links nearby.
 - Backend and API Design node links are stored in the collapsible resource lists in `ROADMAP.md`; retain attribution when editing them.
 - The AI transition roadmap is supplementary. Its generated per-node explanations and guides are not copied; do not invent missing resources.
 - When requirements change, reassess and simplify the existing structure instead of adding another roadmap or extra state.
