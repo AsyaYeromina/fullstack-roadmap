@@ -19,7 +19,8 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 1.1 HTTP & networking
 
-- [ ] **1.1.1** Full request/response lifecycle — from the server's perspective
+- [ ] **[1.1.1](NOTES.md#topic-111)** Full request/response lifecycle — from the server's perspective
+  - DNS before the HTTP request: domain-to-IP resolution, delegation, A records, and TTL caching. Practice: [Mess With DNS](https://messwithdns.net/).
 - [ ] **1.1.2** HTTP methods: GET, POST, PUT, PATCH, DELETE — what each one means semantically
 - [ ] **1.1.3** HTTP headers: Content-Type, Authorization, Accept, CORS headers
 - [ ] **1.1.4** Status codes you send: 200, 201, 204, 400, 401, 403, 404, 409, 422, 500

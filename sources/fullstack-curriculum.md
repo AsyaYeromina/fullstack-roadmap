@@ -8,7 +8,7 @@ Original estimate: 2–3 weeks.
 
 ### 1.1 HTTP & networking
 
-- **1.1.1** Full request/response lifecycle — from the server's perspective
+- **[1.1.1](../NOTES.md#topic-111)** Full request/response lifecycle — from the server's perspective
 - **1.1.2** HTTP methods: GET, POST, PUT, PATCH, DELETE — what each one means semantically
 - **1.1.3** HTTP headers: Content-Type, Authorization, Accept, CORS headers
 - **1.1.4** Status codes you send: 200, 201, 204, 400, 401, 403, 404, 409, 422, 500

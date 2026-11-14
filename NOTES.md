@@ -20,3 +20,12 @@ Copy this template below the line for each completed subtopic. Replace `TOPIC_ID
 ---
 
 <!-- Add completed subtopic entries below. The template is not a completed note. -->
+
+<a id="topic-111"></a>
+## 1.1.1 — Full request/response lifecycle
+
+**Date:** 2026-11-14
+
+### DNS
+
+Today I found [messwithdns.net](https://messwithdns.net/), a project where you can experiment with real DNS records. It helped me understand that DNS is a distributed system that helps locate the server responsible for a particular domain. An A record maps a domain name to an IPv4 address, while TTL determines how long an answer can be cached—not how long the record exists.
