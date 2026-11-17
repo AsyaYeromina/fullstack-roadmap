@@ -1,12 +1,16 @@
 # Fullstack roadmap
 
-One checklist for moving from frontend work to fullstack development. Start at the first unchecked **core** subtopic. Each checkbox is one study step; the linked resource lists are a menu, not a demand to read everything in one day.
+One checklist for moving from frontend work to fullstack development. For a focused first pass, study unchecked **P0** topics in order; return to P1 and P2 when needed. Each checkbox is one study step; the linked resource lists are a menu, not a demand to read everything in one day.
 
 ## How to use this roadmap
 
-1. On a weekday, study one unchecked core subtopic. Spend up to 15–20 minutes on a small practical task; the group prompt below is a starting point.
+**Job-readiness priority (React + Node/NestJS + PostgreSQL):** **P0** = learn and practise for a first fullstack project and interview; **P1** = useful next, or learn when your project needs it; **P2** = deeper or specialized material to revisit later. These labels rank learning value for this target stack, not the difficulty of a topic. Keep the topic order within each group; if time is tight, study P0 first and pull in P1 only when needed. A priority label does not mark a topic complete.
+
+The ranking considers whether a topic helps you build, test, secure, deploy, and explain one end-to-end app, as well as skills named in current [junior Node/React](https://jobs.lever.co/masterborn-2/449dab93-d089-4094-ab7e-1cea3e2ad4d1) and [entry-level fullstack](https://jobs.lever.co/steerbridge/718b3135-d15d-4cbc-9541-1cbb8a6f5ec5) roles. Employers vary, so adjust priorities when you target a specific vacancy.
+
+1. On a study day, choose the next unfinished P0 subtopic for the focused path, or follow every topic in order for the full curriculum. Spend up to 15–20 minutes on a small practical task; the group prompt below is a starting point.
 2. Add a section with the same subtopic ID to [NOTES.md](NOTES.md): your short cheatsheet, what you did, and how it felt (easy, hard, boring, or your own words).
-3. Commit your notes. Then check off that subtopic. The next reminder advances after a note commit for the current ID, even if you have not updated the checkbox yet.
+3. Commit your notes when the entry covers the subtopic, practical result, and how it felt. Then check off that subtopic. A partial note does not advance the reminder, even if committed.
 4. Record skipped days in [STUDY_LOG.md](STUDY_LOG.md); a missed day does not move the checklist.
 
 The 321 core subtopics below come from the supplied curriculum, in its original order and wording. At one subtopic each weekday, they take about 64 weeks before the added steps. The original phase week estimates were shorter than this pace, so progress follows checkboxes rather than those estimates.
@@ -19,17 +23,17 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 1.1 HTTP & networking
 
-- [ ] **[1.1.1](NOTES.md#topic-111)** Full request/response lifecycle — from the server's perspective
+- [ ] **[1.1.1](NOTES.md#topic-111)** **P0** Full request/response lifecycle — from the server's perspective
   - DNS before the HTTP request: domain-to-IP resolution, delegation, A records, and TTL caching. Practice: [Mess With DNS](https://messwithdns.net/).
-- [ ] **1.1.2** HTTP methods: GET, POST, PUT, PATCH, DELETE — what each one means semantically
-- [ ] **1.1.3** HTTP headers: Content-Type, Authorization, Accept, CORS headers
-- [ ] **1.1.4** Status codes you send: 200, 201, 204, 400, 401, 403, 404, 409, 422, 500
-- [ ] **1.1.5** Request body formats: JSON, form-urlencoded, multipart/form-data
-- [ ] **1.1.6** URL anatomy: protocol, host, pathname, query string, fragment
+- [ ] **1.1.2** **P0** HTTP methods: GET, POST, PUT, PATCH, DELETE — what each one means semantically
+- [ ] **1.1.3** **P0** HTTP headers: Content-Type, Authorization, Accept, CORS headers
+- [ ] **1.1.4** **P0** Status codes you send: 200, 201, 204, 400, 401, 403, 404, 409, 422, 500
+- [ ] **1.1.5** **P1** Request body formats: JSON, form-urlencoded, multipart/form-data
+- [ ] **1.1.6** **P0** URL anatomy: protocol, host, pathname, query string, fragment
 
 **Added from the transition roadmap**
 
-- [ ] **1.1.A1** Explain the client/server model and why HTTP requests are stateless.
+- [ ] **1.1.A1** **P1** Explain the client/server model and why HTTP requests are stateless.
 
 **15–20 minute practice idea:** Use browser DevTools on one page. Record the request URL, method, status, and one header.
 
@@ -137,18 +141,18 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 1.2 Node.js basics
 
-- [ ] **1.2.1** What Node.js is: V8 engine + libuv (not a browser runtime)
-- [ ] **1.2.2** Installing Node.js with nvm — managing multiple versions
-- [ ] **1.2.3** Running scripts: node index.js
-- [ ] **1.2.4** process object: process.env, process.argv, process.exit(), process.cwd()
-- [ ] **1.2.5** Module system: require() / CommonJS vs import / ESM — differences and when to use each
-- [ ] **1.2.6** package.json: scripts, dependencies, devDependencies, main, type fields
-- [ ] **1.2.7** npm essentials: install, run, init, uninstall, update, ci
+- [ ] **1.2.1** **P0** What Node.js is: V8 engine + libuv (not a browser runtime)
+- [ ] **1.2.2** **P1** Installing Node.js with nvm — managing multiple versions
+- [ ] **1.2.3** **P1** Running scripts: node index.js
+- [ ] **1.2.4** **P1** process object: process.env, process.argv, process.exit(), process.cwd()
+- [ ] **1.2.5** **P0** Module system: require() / CommonJS vs import / ESM — differences and when to use each
+- [ ] **1.2.6** **P0** package.json: scripts, dependencies, devDependencies, main, type fields
+- [ ] **1.2.7** **P0** npm essentials: install, run, init, uninstall, update, ci
 
 **Added from the transition roadmap**
 
-- [ ] **1.2.A1** Use EventEmitter and explain when an event is useful.
-- [ ] **1.2.A2** Compare the browser runtime with Node.js process and file APIs.
+- [ ] **1.2.A1** **P2** Use EventEmitter and explain when an event is useful.
+- [ ] **1.2.A2** **P1** Compare the browser runtime with Node.js process and file APIs.
 
 **15–20 minute practice idea:** Print `process.argv`, `process.cwd()`, and one environment variable in a tiny script.
 
@@ -173,15 +177,15 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 1.3 Environment & config
 
-- [ ] **1.3.1** .env file format: KEY=value pairs, no spaces around =
-- [ ] **1.3.2** dotenv package: require('dotenv').config() — where to call it
-- [ ] **1.3.3** Reading variables: process.env.MY_VAR
-- [ ] **1.3.4** .gitignore: always exclude .env — never commit secrets
-- [ ] **1.3.5** .env.example: template file documenting required variables
+- [ ] **1.3.1** **P1** .env file format: KEY=value pairs, no spaces around =
+- [ ] **1.3.2** **P1** dotenv package: require('dotenv').config() — where to call it
+- [ ] **1.3.3** **P0** Reading variables: process.env.MY_VAR
+- [ ] **1.3.4** **P0** .gitignore: always exclude .env — never commit secrets
+- [ ] **1.3.5** **P0** .env.example: template file documenting required variables
 
 **Added from the transition roadmap**
 
-- [ ] **1.3.A1** Separate development and production settings without committing secrets.
+- [ ] **1.3.A1** **P1** Separate development and production settings without committing secrets.
 
 **15–20 minute practice idea:** Create `.env.example` and a `.gitignore`; explain why the real `.env` stays local.
 
@@ -198,14 +202,14 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 1.4 First raw HTTP server
 
-- [ ] **1.4.1** Node.js built-in http module — no install needed
-- [ ] **1.4.2** http.createServer((req, res) => {}) pattern
-- [ ] **1.4.3** req object: req.url, req.method, req.headers
-- [ ] **1.4.4** res.writeHead(statusCode, headersObject)
-- [ ] **1.4.5** res.end(body) — sending the response
-- [ ] **1.4.6** Manual routing: if/else on req.url + req.method
-- [ ] **1.4.7** Sending JSON: JSON.stringify() + Content-Type: application/json header
-- [ ] **1.4.8** Parsing incoming JSON body: req.on('data') + req.on('end') pattern
+- [ ] **1.4.1** **P1** Node.js built-in http module — no install needed
+- [ ] **1.4.2** **P0** http.createServer((req, res) => {}) pattern
+- [ ] **1.4.3** **P0** req object: req.url, req.method, req.headers
+- [ ] **1.4.4** **P1** res.writeHead(statusCode, headersObject)
+- [ ] **1.4.5** **P1** res.end(body) — sending the response
+- [ ] **1.4.6** **P1** Manual routing: if/else on req.url + req.method
+- [ ] **1.4.7** **P0** Sending JSON: JSON.stringify() + Content-Type: application/json header
+- [ ] **1.4.8** **P2** Parsing incoming JSON body: req.on('data') + req.on('end') pattern
 
 **15–20 minute practice idea:** Make a `/hello` endpoint with the built in `http` module and send JSON.
 
@@ -242,13 +246,13 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 2.1 Event loop & async model
 
-- [ ] **2.1.1** Call stack, Web APIs, task queue — how the three interact
-- [ ] **2.1.2** Microtask queue vs macrotask queue — execution order
-- [ ] **2.1.3** setTimeout, setInterval, setImmediate, process.nextTick — differences
-- [ ] **2.1.4** Why Node.js is non-blocking despite being single-threaded
-- [ ] **2.1.5** Promise execution order in the event loop
-- [ ] **2.1.6** async/await desugared — what it compiles to under the hood
-- [ ] **2.1.7** Blocking vs non-blocking operations — when it matters
+- [ ] **2.1.1** **P1** Call stack, Web APIs, task queue — how the three interact
+- [ ] **2.1.2** **P1** Microtask queue vs macrotask queue — execution order
+- [ ] **2.1.3** **P2** setTimeout, setInterval, setImmediate, process.nextTick — differences
+- [ ] **2.1.4** **P0** Why Node.js is non-blocking despite being single-threaded
+- [ ] **2.1.5** **P0** Promise execution order in the event loop
+- [ ] **2.1.6** **P2** async/await desugared — what it compiles to under the hood
+- [ ] **2.1.7** **P0** Blocking vs non-blocking operations — when it matters
 
 **15–20 minute practice idea:** Predict and check the output order of one Promise, timer, and `process.nextTick`.
 
@@ -264,14 +268,14 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 2.2 Streams & file system
 
-- [ ] **2.2.1** What a Buffer is — binary data representation in Node.js
-- [ ] **2.2.2** Readable, Writable, Duplex, Transform — stream types
-- [ ] **2.2.3** pipe() method — connecting a readable stream to a writable
-- [ ] **2.2.4** fs.promises: readFile, writeFile, appendFile, unlink, mkdir
-- [ ] **2.2.5** path module: join(), resolve(), dirname(), basename(), extname()
-- [ ] **2.2.6** __dirname and __filename (CJS) vs import.meta.url (ESM)
-- [ ] **2.2.7** fs.readdir() + fs.stat() — working with directories
-- [ ] **2.2.8** Streaming large files vs readFile — when to choose which
+- [ ] **2.2.1** **P1** What a Buffer is — binary data representation in Node.js
+- [ ] **2.2.2** **P2** Readable, Writable, Duplex, Transform — stream types
+- [ ] **2.2.3** **P2** pipe() method — connecting a readable stream to a writable
+- [ ] **2.2.4** **P0** fs.promises: readFile, writeFile, appendFile, unlink, mkdir
+- [ ] **2.2.5** **P0** path module: join(), resolve(), dirname(), basename(), extname()
+- [ ] **2.2.6** **P2** __dirname and __filename (CJS) vs import.meta.url (ESM)
+- [ ] **2.2.7** **P2** fs.readdir() + fs.stat() — working with directories
+- [ ] **2.2.8** **P2** Streaming large files vs readFile — when to choose which
 
 **15–20 minute practice idea:** Read a text file with `fs.promises` and print its first line.
 
@@ -279,13 +283,13 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 2.3 Error handling patterns
 
-- [ ] **2.3.1** try/catch with async/await — the correct pattern
-- [ ] **2.3.2** Unhandled promise rejections — why they crash production apps
-- [ ] **2.3.3** process.on('unhandledRejection') and 'uncaughtException' handlers
-- [ ] **2.3.4** Error object anatomy: message, name, stack
-- [ ] **2.3.5** Custom error classes extending Error with extra fields
-- [ ] **2.3.6** Error-first callbacks (legacy pattern — you'll still encounter it)
-- [ ] **2.3.7** Operational errors vs programmer errors — the distinction
+- [ ] **2.3.1** **P0** try/catch with async/await — the correct pattern
+- [ ] **2.3.2** **P0** Unhandled promise rejections — why they crash production apps
+- [ ] **2.3.3** **P2** process.on('unhandledRejection') and 'uncaughtException' handlers
+- [ ] **2.3.4** **P1** Error object anatomy: message, name, stack
+- [ ] **2.3.5** **P1** Custom error classes extending Error with extra fields
+- [ ] **2.3.6** **P2** Error-first callbacks (legacy pattern — you'll still encounter it)
+- [ ] **2.3.7** **P2** Operational errors vs programmer errors — the distinction
 
 **15–20 minute practice idea:** Throw a custom error from an async function and return a safe message.
 
@@ -305,13 +309,13 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 2.4 Advanced async patterns
 
-- [ ] **2.4.1** Promise.all() — parallel, fails fast on first rejection
-- [ ] **2.4.2** Promise.allSettled() — parallel, never throws, returns all results
-- [ ] **2.4.3** Promise.race() — resolves/rejects with the first to settle
-- [ ] **2.4.4** Promise.any() — resolves with the first to fulfill
-- [ ] **2.4.5** Sequential async with for...of loops (not forEach!)
-- [ ] **2.4.6** Async iterators: for await...of
-- [ ] **2.4.7** AbortController + AbortSignal — cancellation pattern
+- [ ] **2.4.1** **P0** Promise.all() — parallel, fails fast on first rejection
+- [ ] **2.4.2** **P1** Promise.allSettled() — parallel, never throws, returns all results
+- [ ] **2.4.3** **P2** Promise.race() — resolves/rejects with the first to settle
+- [ ] **2.4.4** **P2** Promise.any() — resolves with the first to fulfill
+- [ ] **2.4.5** **P0** Sequential async with for...of loops (not forEach!)
+- [ ] **2.4.6** **P2** Async iterators: for await...of
+- [ ] **2.4.7** **P2** AbortController + AbortSignal — cancellation pattern
 
 **15–20 minute practice idea:** Call two independent async functions with `Promise.allSettled` and inspect both results.
 
@@ -319,13 +323,13 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 2.5 npm ecosystem
 
-- [ ] **2.5.1** Semantic versioning: major.minor.patch — what each bump means
-- [ ] **2.5.2** package.json version ranges: ^ (minor), ~ (patch), exact
-- [ ] **2.5.3** package-lock.json — purpose and when to commit it
-- [ ] **2.5.4** npm scripts: pre/post hooks, chaining with &&
-- [ ] **2.5.5** Global vs local package install — when each makes sense
-- [ ] **2.5.6** npx — run a package without installing globally
-- [ ] **2.5.7** Workspaces — monorepo basics
+- [ ] **2.5.1** **P1** Semantic versioning: major.minor.patch — what each bump means
+- [ ] **2.5.2** **P1** package.json version ranges: ^ (minor), ~ (patch), exact
+- [ ] **2.5.3** **P0** package-lock.json — purpose and when to commit it
+- [ ] **2.5.4** **P2** npm scripts: pre/post hooks, chaining with &&
+- [ ] **2.5.5** **P2** Global vs local package install — when each makes sense
+- [ ] **2.5.6** **P1** npx — run a package without installing globally
+- [ ] **2.5.7** **P2** Workspaces — monorepo basics
 
 **15–20 minute practice idea:** Add one npm script and explain the lockfile diff after `npm install`.
 
@@ -333,18 +337,18 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 2.6 Build a CRUD server (no framework)
 
-- [ ] **2.6.1** Router class: store routes as method+path → handler map
-- [ ] **2.6.2** Middleware concept: function(req, res, next) chain
-- [ ] **2.6.3** Body parser middleware: handle incoming JSON without a library
-- [ ] **2.6.4** In-memory storage: Map or plain object as 'database'
-- [ ] **2.6.5** JSON file storage: read → parse → modify → write cycle
-- [ ] **2.6.6** CRUD for one resource: create, read all, read one, update, delete
-- [ ] **2.6.7** Consistent JSON error format: { statusCode, message, error }
+- [ ] **2.6.1** **P2** Router class: store routes as method+path → handler map
+- [ ] **2.6.2** **P0** Middleware concept: function(req, res, next) chain
+- [ ] **2.6.3** **P2** Body parser middleware: handle incoming JSON without a library
+- [ ] **2.6.4** **P2** In-memory storage: Map or plain object as 'database'
+- [ ] **2.6.5** **P2** JSON file storage: read → parse → modify → write cycle
+- [ ] **2.6.6** **P0** CRUD for one resource: create, read all, read one, update, delete
+- [ ] **2.6.7** **P1** Consistent JSON error format: { statusCode, message, error }
 
 **Added from the transition roadmap**
 
-- [ ] **2.6.A1** Build one Express route and compare it with the raw Node.js server.
-- [ ] **2.6.A2** Serve a static file and explain middleware order.
+- [ ] **2.6.A1** **P0** Build one Express route and compare it with the raw Node.js server.
+- [ ] **2.6.A2** **P2** Serve a static file and explain middleware order.
 
 **15–20 minute practice idea:** Add GET and POST for one in memory collection in the raw HTTP server.
 
@@ -371,19 +375,19 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.1 NestJS architecture
 
-- [ ] **3.1.1** What NestJS is — opinionated Node.js framework, Angular-inspired DI system
-- [ ] **3.1.2** NestJS CLI: npm i -g @nestjs/cli, nest new, nest generate
-- [ ] **3.1.3** Module: feature container — groups controllers, services, providers
-- [ ] **3.1.4** @Module() decorator: imports, controllers, providers, exports arrays
-- [ ] **3.1.5** Controller: handles HTTP requests, maps routes to methods
-- [ ] **3.1.6** @Controller('prefix'), @Get(), @Post(), @Put(), @Patch(), @Delete()
-- [ ] **3.1.7** Service: holds business logic and data access — the brain of a feature
-- [ ] **3.1.8** @Injectable() — marks a class as a provider the DI container can manage
-- [ ] **3.1.9** Dependency Injection: declare a type in constructor → NestJS provides it
-- [ ] **3.1.10** AppModule: root module, bootstrapped in main.ts with NestFactory.create()
-- [ ] **3.1.11** Feature modules: UsersModule, AuthModule, ProductsModule pattern
-- [ ] **3.1.12** Imports/exports between modules — how providers are shared
-- [ ] **3.1.13** @Global() decorator — app-wide singleton providers
+- [ ] **3.1.1** **P1** What NestJS is — opinionated Node.js framework, Angular-inspired DI system
+- [ ] **3.1.2** **P1** NestJS CLI: npm i -g @nestjs/cli, nest new, nest generate
+- [ ] **3.1.3** **P0** Module: feature container — groups controllers, services, providers
+- [ ] **3.1.4** **P1** @Module() decorator: imports, controllers, providers, exports arrays
+- [ ] **3.1.5** **P0** Controller: handles HTTP requests, maps routes to methods
+- [ ] **3.1.6** **P0** @Controller('prefix'), @Get(), @Post(), @Put(), @Patch(), @Delete()
+- [ ] **3.1.7** **P0** Service: holds business logic and data access — the brain of a feature
+- [ ] **3.1.8** **P1** @Injectable() — marks a class as a provider the DI container can manage
+- [ ] **3.1.9** **P0** Dependency Injection: declare a type in constructor → NestJS provides it
+- [ ] **3.1.10** **P1** AppModule: root module, bootstrapped in main.ts with NestFactory.create()
+- [ ] **3.1.11** **P1** Feature modules: UsersModule, AuthModule, ProductsModule pattern
+- [ ] **3.1.12** **P1** Imports/exports between modules — how providers are shared
+- [ ] **3.1.13** **P2** @Global() decorator — app-wide singleton providers
 
 **15–20 minute practice idea:** Generate a Nest feature module, controller, and service; trace one request.
 
@@ -391,16 +395,16 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.2 DTOs & validation
 
-- [ ] **3.2.1** What a DTO is: Data Transfer Object — defines shape of incoming data
-- [ ] **3.2.2** class-validator: @IsString, @IsEmail, @IsNumber, @IsBoolean, @IsUUID
-- [ ] **3.2.3** @IsNotEmpty, @IsOptional, @MinLength, @MaxLength, @Min, @Max, @IsEnum
-- [ ] **3.2.4** class-transformer: plainToInstance, @Exclude, @Expose, @Transform
-- [ ] **3.2.5** ValidationPipe: register globally in main.ts with app.useGlobalPipes()
-- [ ] **3.2.6** transform: true — auto-convert plain objects to class instances
-- [ ] **3.2.7** whitelist: true — strip properties not in the DTO
-- [ ] **3.2.8** ParseIntPipe, ParseUUIDPipe, ParseBoolPipe — parameter transforms
-- [ ] **3.2.9** @ValidateNested() + @Type(() => ChildDto) — validating nested DTOs
-- [ ] **3.2.10** Custom validator: @ValidatorConstraint + @Validate() decorator
+- [ ] **3.2.1** **P0** What a DTO is: Data Transfer Object — defines shape of incoming data
+- [ ] **3.2.2** **P0** class-validator: @IsString, @IsEmail, @IsNumber, @IsBoolean, @IsUUID
+- [ ] **3.2.3** **P1** @IsNotEmpty, @IsOptional, @MinLength, @MaxLength, @Min, @Max, @IsEnum
+- [ ] **3.2.4** **P2** class-transformer: plainToInstance, @Exclude, @Expose, @Transform
+- [ ] **3.2.5** **P0** ValidationPipe: register globally in main.ts with app.useGlobalPipes()
+- [ ] **3.2.6** **P2** transform: true — auto-convert plain objects to class instances
+- [ ] **3.2.7** **P1** whitelist: true — strip properties not in the DTO
+- [ ] **3.2.8** **P1** ParseIntPipe, ParseUUIDPipe, ParseBoolPipe — parameter transforms
+- [ ] **3.2.9** **P2** @ValidateNested() + @Type(() => ChildDto) — validating nested DTOs
+- [ ] **3.2.10** **P2** Custom validator: @ValidatorConstraint + @Validate() decorator
 
 **15–20 minute practice idea:** Add one DTO validation rule and send both a valid and invalid request.
 
@@ -408,17 +412,17 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.3 HTTP mechanics in NestJS
 
-- [ ] **3.3.1** @Body(), @Param('id'), @Query('page'), @Headers('x-api-key')
-- [ ] **3.3.2** Route parameters: /users/:id — @Param('id') extracts it
-- [ ] **3.3.3** Query strings: /users?page=2&limit=10 — @Query() extracts as object
-- [ ] **3.3.4** HTTP exceptions: NotFoundException, BadRequestException, UnauthorizedException, ForbiddenException, ConflictException
-- [ ] **3.3.5** Exception filters: ExceptionFilter interface, @Catch() decorator
-- [ ] **3.3.6** Global exception filter: app.useGlobalFilters(new AllExceptionsFilter())
-- [ ] **3.3.7** Interceptors: transform response, add logging, measure timing
-- [ ] **3.3.8** @UseInterceptors() at method, controller, or global level
-- [ ] **3.3.9** ExecutionContext: access request and response in guards/interceptors
-- [ ] **3.3.10** NestJS middleware: NestMiddleware interface, configure() in module
-- [ ] **3.3.11** @Req() and @Res() — escape hatch to raw Express request/response
+- [ ] **3.3.1** **P0** @Body(), @Param('id'), @Query('page'), @Headers('x-api-key')
+- [ ] **3.3.2** **P1** Route parameters: /users/:id — @Param('id') extracts it
+- [ ] **3.3.3** **P1** Query strings: /users?page=2&limit=10 — @Query() extracts as object
+- [ ] **3.3.4** **P0** HTTP exceptions: NotFoundException, BadRequestException, UnauthorizedException, ForbiddenException, ConflictException
+- [ ] **3.3.5** **P2** Exception filters: ExceptionFilter interface, @Catch() decorator
+- [ ] **3.3.6** **P2** Global exception filter: app.useGlobalFilters(new AllExceptionsFilter())
+- [ ] **3.3.7** **P2** Interceptors: transform response, add logging, measure timing
+- [ ] **3.3.8** **P2** @UseInterceptors() at method, controller, or global level
+- [ ] **3.3.9** **P2** ExecutionContext: access request and response in guards/interceptors
+- [ ] **3.3.10** **P2** NestJS middleware: NestMiddleware interface, configure() in module
+- [ ] **3.3.11** **P2** @Req() and @Res() — escape hatch to raw Express request/response
 
 **15–20 minute practice idea:** Add a route parameter and query parameter to one Nest endpoint.
 
@@ -439,23 +443,23 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.4 PostgreSQL fundamentals
 
-- [ ] **3.4.1** What PostgreSQL is — relational DB, ACID compliant, open source
-- [ ] **3.4.2** Running PostgreSQL locally via Docker: docker run --name pg -e POSTGRES_PASSWORD=pass -p 5432:5432 postgres
-- [ ] **3.4.3** psql CLI: connect, \l (list DBs), \c (connect), \dt (tables), \d tablename
-- [ ] **3.4.4** Core SQL: SELECT, INSERT INTO, UPDATE, DELETE, WHERE, ORDER BY, LIMIT, OFFSET
-- [ ] **3.4.5** Data types: VARCHAR, TEXT, INTEGER, BIGINT, BOOLEAN, TIMESTAMP, UUID, JSONB
-- [ ] **3.4.6** Constraints: NOT NULL, UNIQUE, DEFAULT, CHECK
-- [ ] **3.4.7** Primary key and foreign key — referential integrity
-- [ ] **3.4.8** INNER JOIN, LEFT JOIN — fetching related records
-- [ ] **3.4.9** Transactions: BEGIN, COMMIT, ROLLBACK — atomicity guarantee
-- [ ] **3.4.10** Indexes: what they are, B-tree index, when to add one
-- [ ] **3.4.11** N+1 query problem — what it is, why it kills performance
-- [ ] **3.4.12** Connection pooling — why you reuse connections instead of opening new ones
+- [ ] **3.4.1** **P1** What PostgreSQL is — relational DB, ACID compliant, open source
+- [ ] **3.4.2** **P1** Running PostgreSQL locally via Docker: docker run --name pg -e POSTGRES_PASSWORD=pass -p 5432:5432 postgres
+- [ ] **3.4.3** **P1** psql CLI: connect, \l (list DBs), \c (connect), \dt (tables), \d tablename
+- [ ] **3.4.4** **P0** Core SQL: SELECT, INSERT INTO, UPDATE, DELETE, WHERE, ORDER BY, LIMIT, OFFSET
+- [ ] **3.4.5** **P1** Data types: VARCHAR, TEXT, INTEGER, BIGINT, BOOLEAN, TIMESTAMP, UUID, JSONB
+- [ ] **3.4.6** **P0** Constraints: NOT NULL, UNIQUE, DEFAULT, CHECK
+- [ ] **3.4.7** **P0** Primary key and foreign key — referential integrity
+- [ ] **3.4.8** **P0** INNER JOIN, LEFT JOIN — fetching related records
+- [ ] **3.4.9** **P0** Transactions: BEGIN, COMMIT, ROLLBACK — atomicity guarantee
+- [ ] **3.4.10** **P1** Indexes: what they are, B-tree index, when to add one
+- [ ] **3.4.11** **P1** N+1 query problem — what it is, why it kills performance
+- [ ] **3.4.12** **P2** Connection pooling — why you reuse connections instead of opening new ones
 
 **Added from the transition roadmap**
 
-- [ ] **3.4.A1** Explain normalization and write one GROUP BY query.
-- [ ] **3.4.A2** Compare relational and document database shapes for one feature.
+- [ ] **3.4.A1** **P1** Explain normalization and write one GROUP BY query.
+- [ ] **3.4.A2** **P2** Compare relational and document database shapes for one feature.
 
 **15–20 minute practice idea:** Create two related tables and run one JOIN in `psql`.
 
@@ -500,24 +504,24 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.5 Prisma ORM
 
-- [ ] **3.5.1** What Prisma is: schema-first ORM with type-safe query client
-- [ ] **3.5.2** prisma init — creates schema.prisma + sets up DATABASE_URL in .env
-- [ ] **3.5.3** schema.prisma: datasource block, generator block, model blocks
-- [ ] **3.5.4** Field types: String, Int, Boolean, DateTime, Float, Json, Bytes
-- [ ] **3.5.5** Field attributes: @id, @default(), @unique, @updatedAt, @map()
-- [ ] **3.5.6** Model-level attributes: @@unique, @@index, @@map()
-- [ ] **3.5.7** Relations: one-to-many, many-to-many (implicit join table), one-to-one
-- [ ] **3.5.8** @relation() — explicit relation with fields and references
-- [ ] **3.5.9** prisma generate — regenerates the type-safe Prisma Client
-- [ ] **3.5.10** CRUD: create, findMany, findUnique, findFirst, update, upsert, delete, deleteMany
-- [ ] **3.5.11** Where filters: equals, contains, startsWith, endsWith, gt, lt, gte, lte, in, not
-- [ ] **3.5.12** select: return only specific fields
-- [ ] **3.5.13** include: eager-load related records — prevents N+1
-- [ ] **3.5.14** Pagination: skip + take pattern
-- [ ] **3.5.15** Transactions: prisma.$transaction([...ops]) and interactive transactions
-- [ ] **3.5.16** Migrations: npx prisma migrate dev (dev) vs prisma migrate deploy (prod)
-- [ ] **3.5.17** Seeding: prisma/seed.ts + prisma.config.js seed command
-- [ ] **3.5.18** Prisma Studio: npx prisma studio — visual DB browser in browser
+- [ ] **3.5.1** **P1** What Prisma is: schema-first ORM with type-safe query client
+- [ ] **3.5.2** **P1** prisma init — creates schema.prisma + sets up DATABASE_URL in .env
+- [ ] **3.5.3** **P0** schema.prisma: datasource block, generator block, model blocks
+- [ ] **3.5.4** **P1** Field types: String, Int, Boolean, DateTime, Float, Json, Bytes
+- [ ] **3.5.5** **P1** Field attributes: @id, @default(), @unique, @updatedAt, @map()
+- [ ] **3.5.6** **P2** Model-level attributes: @@unique, @@index, @@map()
+- [ ] **3.5.7** **P0** Relations: one-to-many, many-to-many (implicit join table), one-to-one
+- [ ] **3.5.8** **P1** @relation() — explicit relation with fields and references
+- [ ] **3.5.9** **P1** prisma generate — regenerates the type-safe Prisma Client
+- [ ] **3.5.10** **P0** CRUD: create, findMany, findUnique, findFirst, update, upsert, delete, deleteMany
+- [ ] **3.5.11** **P1** Where filters: equals, contains, startsWith, endsWith, gt, lt, gte, lte, in, not
+- [ ] **3.5.12** **P1** select: return only specific fields
+- [ ] **3.5.13** **P1** include: eager-load related records — prevents N+1
+- [ ] **3.5.14** **P1** Pagination: skip + take pattern
+- [ ] **3.5.15** **P2** Transactions: prisma.$transaction([...ops]) and interactive transactions
+- [ ] **3.5.16** **P0** Migrations: npx prisma migrate dev (dev) vs prisma migrate deploy (prod)
+- [ ] **3.5.17** **P2** Seeding: prisma/seed.ts + prisma.config.js seed command
+- [ ] **3.5.18** **P2** Prisma Studio: npx prisma studio — visual DB browser in browser
 
 **15–20 minute practice idea:** Model a one to many relation and query it with Prisma.
 
@@ -546,24 +550,24 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.6 REST API design
 
-- [ ] **3.6.1** Resource naming: plural nouns — /users, /products, /orders
-- [ ] **3.6.2** HTTP method semantics: GET (read), POST (create), PUT (full replace), PATCH (partial update), DELETE (remove)
-- [ ] **3.6.3** Idempotency: GET, PUT, DELETE are idempotent — POST is not
-- [ ] **3.6.4** Nested resources: /users/:userId/posts/:postId
-- [ ] **3.6.5** Offset pagination: ?page=2&limit=10 — simple, has drift issues
-- [ ] **3.6.6** Cursor pagination: ?cursor=lastId&limit=10 — stable, better for real-time
-- [ ] **3.6.7** Filtering: ?status=active&category=shoes — query params
-- [ ] **3.6.8** Sorting: ?sortBy=createdAt&order=desc — query params
-- [ ] **3.6.9** API versioning: /v1/users (URL) vs Accept-Version header
-- [ ] **3.6.10** Soft delete pattern: deletedAt timestamp instead of real DELETE
-- [ ] **3.6.11** UUID vs auto-increment IDs — tradeoffs
-- [ ] **3.6.12** createdAt and updatedAt on every Prisma model
+- [ ] **3.6.1** **P0** Resource naming: plural nouns — /users, /products, /orders
+- [ ] **3.6.2** **P0** HTTP method semantics: GET (read), POST (create), PUT (full replace), PATCH (partial update), DELETE (remove)
+- [ ] **3.6.3** **P1** Idempotency: GET, PUT, DELETE are idempotent — POST is not
+- [ ] **3.6.4** **P2** Nested resources: /users/:userId/posts/:postId
+- [ ] **3.6.5** **P1** Offset pagination: ?page=2&limit=10 — simple, has drift issues
+- [ ] **3.6.6** **P2** Cursor pagination: ?cursor=lastId&limit=10 — stable, better for real-time
+- [ ] **3.6.7** **P1** Filtering: ?status=active&category=shoes — query params
+- [ ] **3.6.8** **P1** Sorting: ?sortBy=createdAt&order=desc — query params
+- [ ] **3.6.9** **P2** API versioning: /v1/users (URL) vs Accept-Version header
+- [ ] **3.6.10** **P2** Soft delete pattern: deletedAt timestamp instead of real DELETE
+- [ ] **3.6.11** **P2** UUID vs auto-increment IDs — tradeoffs
+- [ ] **3.6.12** **P1** createdAt and updatedAt on every Prisma model
 
 **Added from the transition roadmap**
 
-- [ ] **3.6.A1** Sketch a GraphQL schema for one resource and compare it with REST.
-- [ ] **3.6.A2** Design an API before implementation: request, response, errors, and examples.
-- [ ] **3.6.A3** Explain BFF (backend for frontend) with a React screen.
+- [ ] **3.6.A1** **P2** Sketch a GraphQL schema for one resource and compare it with REST.
+- [ ] **3.6.A2** **P0** Design an API before implementation: request, response, errors, and examples.
+- [ ] **3.6.A3** **P2** Explain BFF (backend for frontend) with a React screen.
 
 **15–20 minute practice idea:** Write an endpoint contract with method, URI, examples, and error codes.
 
@@ -667,15 +671,15 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 3.7 Swagger / OpenAPI
 
-- [ ] **3.7.1** @nestjs/swagger installation + DocumentBuilder setup in main.ts
-- [ ] **3.7.2** SwaggerModule.createDocument() and SwaggerModule.setup('/api', app, doc)
-- [ ] **3.7.3** @ApiTags('users') — group related endpoints in Swagger UI
-- [ ] **3.7.4** @ApiOperation({ summary: 'Get all users' }) — describe an endpoint
-- [ ] **3.7.5** @ApiProperty() on DTO fields — documents request body schema
-- [ ] **3.7.6** @ApiPropertyOptional() — for optional DTO fields
-- [ ] **3.7.7** @ApiResponse({ status: 200, type: UserDto }) — document response shape
-- [ ] **3.7.8** @ApiBearerAuth() — mark JWT-protected endpoints
-- [ ] **3.7.9** Testing endpoints live in Swagger UI at /api
+- [ ] **3.7.1** **P0** @nestjs/swagger installation + DocumentBuilder setup in main.ts
+- [ ] **3.7.2** **P1** SwaggerModule.createDocument() and SwaggerModule.setup('/api', app, doc)
+- [ ] **3.7.3** **P2** @ApiTags('users') — group related endpoints in Swagger UI
+- [ ] **3.7.4** **P2** @ApiOperation({ summary: 'Get all users' }) — describe an endpoint
+- [ ] **3.7.5** **P1** @ApiProperty() on DTO fields — documents request body schema
+- [ ] **3.7.6** **P2** @ApiPropertyOptional() — for optional DTO fields
+- [ ] **3.7.7** **P2** @ApiResponse({ status: 200, type: UserDto }) — document response shape
+- [ ] **3.7.8** **P2** @ApiBearerAuth() — mark JWT-protected endpoints
+- [ ] **3.7.9** **P1** Testing endpoints live in Swagger UI at /api
 
 **15–20 minute practice idea:** Document one endpoint and try it in Swagger UI.
 
@@ -716,16 +720,16 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 4.1 JWT fundamentals
 
-- [ ] **4.1.1** JWT structure: header.payload.signature — three base64url-encoded parts
-- [ ] **4.1.2** Header: alg (HS256, RS256) + typ: JWT
-- [ ] **4.1.3** Payload: sub, iat, exp — reserved claims + your custom claims
-- [ ] **4.1.4** Signature: HMAC-SHA256 or RSA — prevents tampering
-- [ ] **4.1.5** Access token: short-lived (15min–1hr) — sent with every request
-- [ ] **4.1.6** Refresh token: long-lived (7–30 days) — used only to get new access tokens
-- [ ] **4.1.7** Token storage options: httpOnly cookies (CSRF risk) vs memory (XSS safer)
-- [ ] **4.1.8** Refresh token rotation: issue new refresh token on every use
-- [ ] **4.1.9** Token revocation: blocklist in Redis or DB for forced logout
-- [ ] **4.1.10** jwt.io — inspect and verify tokens manually in browser
+- [ ] **4.1.1** **P0** JWT structure: header.payload.signature — three base64url-encoded parts
+- [ ] **4.1.2** **P2** Header: alg (HS256, RS256) + typ: JWT
+- [ ] **4.1.3** **P0** Payload: sub, iat, exp — reserved claims + your custom claims
+- [ ] **4.1.4** **P0** Signature: HMAC-SHA256 or RSA — prevents tampering
+- [ ] **4.1.5** **P1** Access token: short-lived (15min–1hr) — sent with every request
+- [ ] **4.1.6** **P1** Refresh token: long-lived (7–30 days) — used only to get new access tokens
+- [ ] **4.1.7** **P0** Token storage options: httpOnly cookies (CSRF risk) vs memory (XSS safer)
+- [ ] **4.1.8** **P2** Refresh token rotation: issue new refresh token on every use
+- [ ] **4.1.9** **P2** Token revocation: blocklist in Redis or DB for forced logout
+- [ ] **4.1.10** **P2** jwt.io — inspect and verify tokens manually in browser
 
 **15–20 minute practice idea:** Decode a sample JWT locally and identify `sub`, `iat`, and `exp`.
 
@@ -748,26 +752,26 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 4.2 Auth implementation in NestJS
 
-- [ ] **4.2.1** @nestjs/jwt and @nestjs/passport — install both
-- [ ] **4.2.2** JwtModule.registerAsync() with useFactory for env-based config
-- [ ] **4.2.3** PassportStrategy class — extend Strategy from passport-jwt
-- [ ] **4.2.4** JwtStrategy: extract token from header, verify, return user
-- [ ] **4.2.5** validate() return value becomes req.user in controllers
-- [ ] **4.2.6** JwtAuthGuard extending AuthGuard('jwt')
-- [ ] **4.2.7** LocalStrategy: validate username + password, return user
-- [ ] **4.2.8** LocalAuthGuard for the POST /auth/login endpoint
-- [ ] **4.2.9** @Public() custom decorator + IS_PUBLIC_KEY metadata
-- [ ] **4.2.10** Global JwtAuthGuard that skips @Public() routes
-- [ ] **4.2.11** Reflector service — reading decorator metadata in guards
-- [ ] **4.2.12** Refresh token endpoint: validate refresh token → issue new pair
-- [ ] **4.2.13** Logout: clear httpOnly cookie or add token ID to blocklist
-- [ ] **4.2.14** @User() custom decorator — extract req.user cleanly in controllers
+- [ ] **4.2.1** **P1** @nestjs/jwt and @nestjs/passport — install both
+- [ ] **4.2.2** **P2** JwtModule.registerAsync() with useFactory for env-based config
+- [ ] **4.2.3** **P1** PassportStrategy class — extend Strategy from passport-jwt
+- [ ] **4.2.4** **P0** JwtStrategy: extract token from header, verify, return user
+- [ ] **4.2.5** **P1** validate() return value becomes req.user in controllers
+- [ ] **4.2.6** **P0** JwtAuthGuard extending AuthGuard('jwt')
+- [ ] **4.2.7** **P0** LocalStrategy: validate username + password, return user
+- [ ] **4.2.8** **P2** LocalAuthGuard for the POST /auth/login endpoint
+- [ ] **4.2.9** **P2** @Public() custom decorator + IS_PUBLIC_KEY metadata
+- [ ] **4.2.10** **P2** Global JwtAuthGuard that skips @Public() routes
+- [ ] **4.2.11** **P2** Reflector service — reading decorator metadata in guards
+- [ ] **4.2.12** **P1** Refresh token endpoint: validate refresh token → issue new pair
+- [ ] **4.2.13** **P2** Logout: clear httpOnly cookie or add token ID to blocklist
+- [ ] **4.2.14** **P2** @User() custom decorator — extract req.user cleanly in controllers
 
 **Added from the transition roadmap**
 
-- [ ] **4.2.A1** Define roles and permissions for one resource using least privilege.
-- [ ] **4.2.A2** Design a password reset flow without implementing it yet.
-- [ ] **4.2.A3** Explain when MFA adds protection.
+- [ ] **4.2.A1** **P1** Define roles and permissions for one resource using least privilege.
+- [ ] **4.2.A2** **P2** Design a password reset flow without implementing it yet.
+- [ ] **4.2.A3** **P2** Explain when MFA adds protection.
 
 **15–20 minute practice idea:** Protect one route and test anonymous versus signed in access.
 
@@ -843,14 +847,14 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 4.3 Password security
 
-- [ ] **4.3.1** Never store plain-text passwords — fundamental rule
-- [ ] **4.3.2** bcrypt: how one-way hashing works, what salt rounds mean
-- [ ] **4.3.3** Salt rounds (10–12): cost factor, time/security tradeoff
-- [ ] **4.3.4** bcrypt.hash(password, saltRounds) — call on registration
-- [ ] **4.3.5** bcrypt.compare(plainPassword, hashedPassword) — call on login
-- [ ] **4.3.6** argon2 — modern memory-hard alternative to bcrypt
-- [ ] **4.3.7** Timing-safe comparison — why it prevents timing attacks
-- [ ] **4.3.8** Password rules: minimum 8 chars, strength check, breach check (haveibeenpwned API)
+- [ ] **4.3.1** **P0** Never store plain-text passwords — fundamental rule
+- [ ] **4.3.2** **P1** bcrypt: how one-way hashing works, what salt rounds mean
+- [ ] **4.3.3** **P2** Salt rounds (10–12): cost factor, time/security tradeoff
+- [ ] **4.3.4** **P0** bcrypt.hash(password, saltRounds) — call on registration
+- [ ] **4.3.5** **P0** bcrypt.compare(plainPassword, hashedPassword) — call on login
+- [ ] **4.3.6** **P2** argon2 — modern memory-hard alternative to bcrypt
+- [ ] **4.3.7** **P2** Timing-safe comparison — why it prevents timing attacks
+- [ ] **4.3.8** **P2** Password rules: minimum 8 chars, strength check, breach check (haveibeenpwned API)
 
 **15–20 minute practice idea:** Hash and verify one password with a library; never log the plaintext.
 
@@ -878,15 +882,15 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 4.4 OAuth 2.0
 
-- [ ] **4.4.1** What OAuth 2.0 is — delegated authorization, not authentication
-- [ ] **4.4.2** OpenID Connect (OIDC) — identity layer on top of OAuth 2.0
-- [ ] **4.4.3** Authorization Code flow: redirect → code → exchange → tokens
-- [ ] **4.4.4** Access token vs ID token — what each contains
-- [ ] **4.4.5** Google OAuth strategy: passport-google-oauth20 setup
-- [ ] **4.4.6** GitHub OAuth strategy: passport-github2 setup
-- [ ] **4.4.7** Callback URL: register in provider dashboard + handle in NestJS
-- [ ] **4.4.8** Profile object: what provider returns (id, email, displayName, photos)
-- [ ] **4.4.9** Linking OAuth accounts to local users — find-or-create pattern
+- [ ] **4.4.1** **P1** What OAuth 2.0 is — delegated authorization, not authentication
+- [ ] **4.4.2** **P1** OpenID Connect (OIDC) — identity layer on top of OAuth 2.0
+- [ ] **4.4.3** **P1** Authorization Code flow: redirect → code → exchange → tokens
+- [ ] **4.4.4** **P1** Access token vs ID token — what each contains
+- [ ] **4.4.5** **P2** Google OAuth strategy: passport-google-oauth20 setup
+- [ ] **4.4.6** **P2** GitHub OAuth strategy: passport-github2 setup
+- [ ] **4.4.7** **P2** Callback URL: register in provider dashboard + handle in NestJS
+- [ ] **4.4.8** **P2** Profile object: what provider returns (id, email, displayName, photos)
+- [ ] **4.4.9** **P2** Linking OAuth accounts to local users — find-or-create pattern
 
 **15–20 minute practice idea:** Draw the authorization code redirect and callback sequence.
 
@@ -919,16 +923,16 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 4.5 Security fundamentals
 
-- [ ] **4.5.1** CORS: why browsers block cross-origin, NestJS enableCors() options
-- [ ] **4.5.2** CSRF: what it is, SameSite=Strict cookie attribute, CSRF tokens
-- [ ] **4.5.3** SQL injection: how it works, why Prisma parameterization prevents it
-- [ ] **4.5.4** XSS: reflected, stored, DOM-based — input sanitization and CSP
-- [ ] **4.5.5** Helmet.js: X-Frame-Options, Content-Security-Policy, HSTS headers
-- [ ] **4.5.6** @nestjs/throttler: rate limiting — ThrottlerModule + ThrottlerGuard
-- [ ] **4.5.7** Input sanitization: strip HTML, validate types strictly, whitelist
-- [ ] **4.5.8** Never log passwords, tokens, PII, or secrets
-- [ ] **4.5.9** HTTPS: TLS handshake basics, HTTP is never safe in production
-- [ ] **4.5.10** Secrets in environment variables — never hardcode, never commit
+- [ ] **4.5.1** **P0** CORS: why browsers block cross-origin, NestJS enableCors() options
+- [ ] **4.5.2** **P1** CSRF: what it is, SameSite=Strict cookie attribute, CSRF tokens
+- [ ] **4.5.3** **P0** SQL injection: how it works, why Prisma parameterization prevents it
+- [ ] **4.5.4** **P0** XSS: reflected, stored, DOM-based — input sanitization and CSP
+- [ ] **4.5.5** **P2** Helmet.js: X-Frame-Options, Content-Security-Policy, HSTS headers
+- [ ] **4.5.6** **P2** @nestjs/throttler: rate limiting — ThrottlerModule + ThrottlerGuard
+- [ ] **4.5.7** **P2** Input sanitization: strip HTML, validate types strictly, whitelist
+- [ ] **4.5.8** **P0** Never log passwords, tokens, PII, or secrets
+- [ ] **4.5.9** **P1** HTTPS: TLS handshake basics, HTTP is never safe in production
+- [ ] **4.5.10** **P0** Secrets in environment variables — never hardcode, never commit
 
 **15–20 minute practice idea:** Write a tiny threat checklist for one endpoint: input, access, secrets, and logs.
 
@@ -965,16 +969,16 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 4.6 OWASP Top 10
 
-- [ ] **4.6.1** A01 Broken Access Control — check authorization on every endpoint, not just login
-- [ ] **4.6.2** A02 Cryptographic Failures — use HTTPS, strong algorithms, no MD5/SHA1 for passwords
-- [ ] **4.6.3** A03 Injection — SQL, command, LDAP injection — validate + parameterize
-- [ ] **4.6.4** A04 Insecure Design — threat model before you build, not after
-- [ ] **4.6.5** A05 Security Misconfiguration — no debug mode in prod, review all defaults
-- [ ] **4.6.6** A06 Vulnerable and Outdated Components — npm audit, Dependabot
-- [ ] **4.6.7** A07 Identification and Authentication Failures — brute force, weak passwords
-- [ ] **4.6.8** A08 Software and Data Integrity Failures — verify dependency integrity
-- [ ] **4.6.9** A09 Security Logging and Monitoring Failures — log auth events, protect logs
-- [ ] **4.6.10** A10 Server-Side Request Forgery (SSRF) — validate URLs before fetching
+- [ ] **4.6.1** **P0** A01 Broken Access Control — check authorization on every endpoint, not just login
+- [ ] **4.6.2** **P1** A02 Cryptographic Failures — use HTTPS, strong algorithms, no MD5/SHA1 for passwords
+- [ ] **4.6.3** **P1** A03 Injection — SQL, command, LDAP injection — validate + parameterize
+- [ ] **4.6.4** **P2** A04 Insecure Design — threat model before you build, not after
+- [ ] **4.6.5** **P1** A05 Security Misconfiguration — no debug mode in prod, review all defaults
+- [ ] **4.6.6** **P1** A06 Vulnerable and Outdated Components — npm audit, Dependabot
+- [ ] **4.6.7** **P1** A07 Identification and Authentication Failures — brute force, weak passwords
+- [ ] **4.6.8** **P2** A08 Software and Data Integrity Failures — verify dependency integrity
+- [ ] **4.6.9** **P2** A09 Security Logging and Monitoring Failures — log auth events, protect logs
+- [ ] **4.6.10** **P2** A10 Server-Side Request Forgery (SSRF) — validate URLs before fetching
 
 **15–20 minute practice idea:** Find one access control mistake in a toy endpoint and describe the fix.
 
@@ -1014,13 +1018,13 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 5.1 Testing theory
 
-- [ ] **5.1.1** Test pyramid: unit (many, fast) → integration → e2e (few, slow)
-- [ ] **5.1.2** Test behavior, not implementation — test what, not how
-- [ ] **5.1.3** Test doubles: mock (fake impl), stub (canned return), spy (real + tracking)
-- [ ] **5.1.4** Arrange → Act → Assert (AAA) pattern
-- [ ] **5.1.5** Test isolation: each test independent, no shared mutable state
-- [ ] **5.1.6** Coverage: line, branch, function — aim for 70–80% meaningfully
-- [ ] **5.1.7** TDD basics: red (write failing test) → green (make it pass) → refactor
+- [ ] **5.1.1** **P1** Test pyramid: unit (many, fast) → integration → e2e (few, slow)
+- [ ] **5.1.2** **P0** Test behavior, not implementation — test what, not how
+- [ ] **5.1.3** **P2** Test doubles: mock (fake impl), stub (canned return), spy (real + tracking)
+- [ ] **5.1.4** **P0** Arrange → Act → Assert (AAA) pattern
+- [ ] **5.1.5** **P1** Test isolation: each test independent, no shared mutable state
+- [ ] **5.1.6** **P2** Coverage: line, branch, function — aim for 70–80% meaningfully
+- [ ] **5.1.7** **P2** TDD basics: red (write failing test) → green (make it pass) → refactor
 
 **15–20 minute practice idea:** Write one behavior focused unit test using Arrange, Act, Assert.
 
@@ -1060,23 +1064,23 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 5.2 Jest for NestJS
 
-- [ ] **5.2.1** jest.config.ts setup — moduleNameMapper for path aliases
-- [ ] **5.2.2** describe() — group related tests into a suite
-- [ ] **5.2.3** it() / test() — individual test case
-- [ ] **5.2.4** expect() matchers: toBe, toEqual, toContain, toMatchObject, toHaveLength, toBeNull
-- [ ] **5.2.5** Async: resolves.toBe(), rejects.toThrow()
-- [ ] **5.2.6** Call tracking: toHaveBeenCalled, toHaveBeenCalledWith, toHaveBeenCalledTimes
-- [ ] **5.2.7** beforeEach / afterEach — setup and teardown per test
-- [ ] **5.2.8** beforeAll / afterAll — setup and teardown once per suite
-- [ ] **5.2.9** jest.fn() — create a mock function that tracks calls
-- [ ] **5.2.10** jest.mock('../../module') — replace an entire module with mocks
-- [ ] **5.2.11** jest.spyOn(object, 'methodName') — spy on a real method
-- [ ] **5.2.12** Mocking PrismaService: create a mock factory with jest.fn() per method
-- [ ] **5.2.13** Test.createTestingModule({ providers }).compile() — NestJS test module
-- [ ] **5.2.14** Testing services: inject mocked Prisma, call service methods, assert
-- [ ] **5.2.15** Testing controllers: mock service layer, test HTTP response shape
-- [ ] **5.2.16** Testing Guards: mock ExecutionContext, call canActivate()
-- [ ] **5.2.17** jest --coverage — generate HTML coverage report
+- [ ] **5.2.1** **P2** jest.config.ts setup — moduleNameMapper for path aliases
+- [ ] **5.2.2** **P1** describe() — group related tests into a suite
+- [ ] **5.2.3** **P0** it() / test() — individual test case
+- [ ] **5.2.4** **P0** expect() matchers: toBe, toEqual, toContain, toMatchObject, toHaveLength, toBeNull
+- [ ] **5.2.5** **P1** Async: resolves.toBe(), rejects.toThrow()
+- [ ] **5.2.6** **P2** Call tracking: toHaveBeenCalled, toHaveBeenCalledWith, toHaveBeenCalledTimes
+- [ ] **5.2.7** **P1** beforeEach / afterEach — setup and teardown per test
+- [ ] **5.2.8** **P2** beforeAll / afterAll — setup and teardown once per suite
+- [ ] **5.2.9** **P1** jest.fn() — create a mock function that tracks calls
+- [ ] **5.2.10** **P2** jest.mock('../../module') — replace an entire module with mocks
+- [ ] **5.2.11** **P2** jest.spyOn(object, 'methodName') — spy on a real method
+- [ ] **5.2.12** **P1** Mocking PrismaService: create a mock factory with jest.fn() per method
+- [ ] **5.2.13** **P1** Test.createTestingModule({ providers }).compile() — NestJS test module
+- [ ] **5.2.14** **P0** Testing services: inject mocked Prisma, call service methods, assert
+- [ ] **5.2.15** **P2** Testing controllers: mock service layer, test HTTP response shape
+- [ ] **5.2.16** **P2** Testing Guards: mock ExecutionContext, call canActivate()
+- [ ] **5.2.17** **P2** jest --coverage — generate HTML coverage report
 
 **15–20 minute practice idea:** Test one Nest service with a mocked dependency.
 
@@ -1084,18 +1088,18 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 5.3 Integration & E2E testing
 
-- [ ] **5.3.1** Supertest: test HTTP endpoints without starting a real server
-- [ ] **5.3.2** NestJS E2E setup: Test.createTestingModule + app.init() + getHttpServer()
-- [ ] **5.3.3** request(app.getHttpServer()).post('/users').send(dto).expect(201)
-- [ ] **5.3.4** Test database: separate DB instance or override DATABASE_URL in tests
-- [ ] **5.3.5** Database seeding: insert known fixtures before each test
-- [ ] **5.3.6** Database cleanup: DELETE or TRUNCATE after each test for isolation
-- [ ] **5.3.7** Testing a full auth flow: register → login → use JWT → access protected route
+- [ ] **5.3.1** **P0** Supertest: test HTTP endpoints without starting a real server
+- [ ] **5.3.2** **P2** NestJS E2E setup: Test.createTestingModule + app.init() + getHttpServer()
+- [ ] **5.3.3** **P2** request(app.getHttpServer()).post('/users').send(dto).expect(201)
+- [ ] **5.3.4** **P1** Test database: separate DB instance or override DATABASE_URL in tests
+- [ ] **5.3.5** **P2** Database seeding: insert known fixtures before each test
+- [ ] **5.3.6** **P2** Database cleanup: DELETE or TRUNCATE after each test for isolation
+- [ ] **5.3.7** **P0** Testing a full auth flow: register → login → use JWT → access protected route
 
 **Added from the transition roadmap**
 
-- [ ] **5.3.A1** Write a small API contract test.
-- [ ] **5.3.A2** Run a basic load test and record what changed.
+- [ ] **5.3.A1** **P1** Write a small API contract test.
+- [ ] **5.3.A2** **P2** Run a basic load test and record what changed.
 
 **15–20 minute practice idea:** Send a request to a test app and assert status plus response shape.
 
@@ -1127,18 +1131,18 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 5.4 Docker
 
-- [ ] **5.4.1** What Docker is: containers package app + dependencies together
-- [ ] **5.4.2** Images (templates) vs containers (running instances)
-- [ ] **5.4.3** Dockerfile: FROM, WORKDIR, COPY, RUN, EXPOSE, CMD, ENV, ARG
-- [ ] **5.4.4** .dockerignore — exclude node_modules, .env, dist, .git
-- [ ] **5.4.5** docker build -t myapp:latest . — build an image from Dockerfile
-- [ ] **5.4.6** docker run -p 3000:3000 -e NODE_ENV=production myapp — run container
-- [ ] **5.4.7** docker-compose.yml: services, ports, environment, volumes, depends_on
-- [ ] **5.4.8** docker compose up -d, down, logs -f, ps, exec -it service bash
-- [ ] **5.4.9** Multi-stage build: builder stage (compile TS) + runner stage (prod image)
-- [ ] **5.4.10** Docker networking: containers reference each other by service name
-- [ ] **5.4.11** Named volumes for PostgreSQL: persist data across container restarts
-- [ ] **5.4.12** Healthcheck in compose: test command, interval, timeout, retries
+- [ ] **5.4.1** **P0** What Docker is: containers package app + dependencies together
+- [ ] **5.4.2** **P1** Images (templates) vs containers (running instances)
+- [ ] **5.4.3** **P1** Dockerfile: FROM, WORKDIR, COPY, RUN, EXPOSE, CMD, ENV, ARG
+- [ ] **5.4.4** **P1** .dockerignore — exclude node_modules, .env, dist, .git
+- [ ] **5.4.5** **P1** docker build -t myapp:latest . — build an image from Dockerfile
+- [ ] **5.4.6** **P1** docker run -p 3000:3000 -e NODE_ENV=production myapp — run container
+- [ ] **5.4.7** **P0** docker-compose.yml: services, ports, environment, volumes, depends_on
+- [ ] **5.4.8** **P1** docker compose up -d, down, logs -f, ps, exec -it service bash
+- [ ] **5.4.9** **P2** Multi-stage build: builder stage (compile TS) + runner stage (prod image)
+- [ ] **5.4.10** **P2** Docker networking: containers reference each other by service name
+- [ ] **5.4.11** **P1** Named volumes for PostgreSQL: persist data across container restarts
+- [ ] **5.4.12** **P2** Healthcheck in compose: test command, interval, timeout, retries
 
 **15–20 minute practice idea:** Run PostgreSQL with Docker Compose and inspect its logs.
 
@@ -1156,23 +1160,23 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 5.5 CI/CD with GitHub Actions
 
-- [ ] **5.5.1** .github/workflows/ci.yml — file location and purpose
-- [ ] **5.5.2** Workflow YAML structure: name, on (triggers), jobs, steps
-- [ ] **5.5.3** Triggers: push, pull_request (with branch filters), workflow_dispatch
-- [ ] **5.5.4** Runners: runs-on: ubuntu-latest
-- [ ] **5.5.5** actions/checkout@v4 — check out the repo
-- [ ] **5.5.6** actions/setup-node@v4 — install a specific Node.js version
-- [ ] **5.5.7** actions/cache@v3 — cache node_modules between runs
-- [ ] **5.5.8** npm ci — clean install from lockfile (faster than npm install in CI)
-- [ ] **5.5.9** Running tests: npm run test:cov -- --passWithNoTests
-- [ ] **5.5.10** Secrets and env vars: ${{ secrets.DATABASE_URL }} in workflow
-- [ ] **5.5.11** Job dependencies: needs: [test] — deploy only when tests pass
-- [ ] **5.5.12** Deploying to Railway: install Railway CLI, railway up in workflow
-- [ ] **5.5.13** Branch protection rules: require CI to pass before merging to main
+- [ ] **5.5.1** **P1** .github/workflows/ci.yml — file location and purpose
+- [ ] **5.5.2** **P0** Workflow YAML structure: name, on (triggers), jobs, steps
+- [ ] **5.5.3** **P1** Triggers: push, pull_request (with branch filters), workflow_dispatch
+- [ ] **5.5.4** **P1** Runners: runs-on: ubuntu-latest
+- [ ] **5.5.5** **P1** actions/checkout@v4 — check out the repo
+- [ ] **5.5.6** **P1** actions/setup-node@v4 — install a specific Node.js version
+- [ ] **5.5.7** **P2** actions/cache@v3 — cache node_modules between runs
+- [ ] **5.5.8** **P1** npm ci — clean install from lockfile (faster than npm install in CI)
+- [ ] **5.5.9** **P0** Running tests: npm run test:cov -- --passWithNoTests
+- [ ] **5.5.10** **P2** Secrets and env vars: ${{ secrets.DATABASE_URL }} in workflow
+- [ ] **5.5.11** **P2** Job dependencies: needs: [test] — deploy only when tests pass
+- [ ] **5.5.12** **P2** Deploying to Railway: install Railway CLI, railway up in workflow
+- [ ] **5.5.13** **P2** Branch protection rules: require CI to pass before merging to main
 
 **Added from the transition roadmap**
 
-- [ ] **5.5.A1** Use a feature branch, pull request, and code review for one small change.
+- [ ] **5.5.A1** **P0** Use a feature branch, pull request, and code review for one small change.
 
 **15–20 minute practice idea:** Add a workflow that installs dependencies and runs one existing test.
 
@@ -1218,22 +1222,22 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 5.6 Deployment
 
-- [ ] **5.6.1** Railway.app: connect GitHub repo, auto-deploy on push to main
-- [ ] **5.6.2** Environment variables panel in Railway — set all .env values here
-- [ ] **5.6.3** PostgreSQL addon in Railway — DATABASE_URL injected automatically
-- [ ] **5.6.4** RELEASE_COMMAND in railway.toml: npx prisma migrate deploy
-- [ ] **5.6.5** Custom domain + automatic HTTPS certificate in Railway
-- [ ] **5.6.6** Viewing logs in Railway dashboard — debugging production
-- [ ] **5.6.7** Health check endpoint: GET /health → { status: 'ok', timestamp }
-- [ ] **5.6.8** Zero-downtime rolling deploy — Railway's default behaviour
+- [ ] **5.6.1** **P1** Railway.app: connect GitHub repo, auto-deploy on push to main
+- [ ] **5.6.2** **P0** Environment variables panel in Railway — set all .env values here
+- [ ] **5.6.3** **P0** PostgreSQL addon in Railway — DATABASE_URL injected automatically
+- [ ] **5.6.4** **P2** RELEASE_COMMAND in railway.toml: npx prisma migrate deploy
+- [ ] **5.6.5** **P2** Custom domain + automatic HTTPS certificate in Railway
+- [ ] **5.6.6** **P0** Viewing logs in Railway dashboard — debugging production
+- [ ] **5.6.7** **P0** Health check endpoint: GET /health → { status: 'ok', timestamp }
+- [ ] **5.6.8** **P2** Zero-downtime rolling deploy — Railway's default behaviour
 
 **Added from the transition roadmap**
 
-- [ ] **5.6.A1** Add structured request logs and a health check.
-- [ ] **5.6.A2** Explain cache aside using one endpoint.
-- [ ] **5.6.A3** Explain queues, workers, and retries with one background task.
-- [ ] **5.6.A4** Compare polling, WebSockets, and server sent events.
-- [ ] **5.6.A5** Sketch a backup and restore check.
+- [ ] **5.6.A1** **P1** Add structured request logs and a health check.
+- [ ] **5.6.A2** **P2** Explain cache aside using one endpoint.
+- [ ] **5.6.A3** **P2** Explain queues, workers, and retries with one background task.
+- [ ] **5.6.A4** **P2** Compare polling, WebSockets, and server sent events.
+- [ ] **5.6.A5** **P2** Sketch a backup and restore check.
 
 **15–20 minute practice idea:** Add `/health`, deploy a small app, and read its logs.
 
@@ -1364,22 +1368,22 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 6.1 Fullstack integration
 
-- [ ] **6.1.1** CORS: configure NestJS origin to match React dev + prod URLs
-- [ ] **6.1.2** Vite proxy in vite.config.ts: server.proxy for local dev (avoid CORS in dev)
-- [ ] **6.1.3** Environment variables in Vite: VITE_ prefix, import.meta.env.VITE_API_URL
-- [ ] **6.1.4** Axios instance: create with baseURL, timeout, default headers
-- [ ] **6.1.5** Axios request interceptor: attach Authorization: Bearer <token> automatically
-- [ ] **6.1.6** Axios response interceptor: catch 401 → trigger refresh → retry original request
-- [ ] **6.1.7** Token refresh queue: hold parallel 401s while refresh is in-flight
-- [ ] **6.1.8** TanStack Query: QueryClient setup, useQuery, useMutation, queryClient
-- [ ] **6.1.9** queryKey conventions — stable keys prevent over-fetching
-- [ ] **6.1.10** invalidateQueries — trigger refetch after create/update/delete
-- [ ] **6.1.11** Optimistic updates: update UI immediately, rollback on error
-- [ ] **6.1.12** Global error boundary for unhandled API errors
+- [ ] **6.1.1** **P0** CORS: configure NestJS origin to match React dev + prod URLs
+- [ ] **6.1.2** **P2** Vite proxy in vite.config.ts: server.proxy for local dev (avoid CORS in dev)
+- [ ] **6.1.3** **P0** Environment variables in Vite: VITE_ prefix, import.meta.env.VITE_API_URL
+- [ ] **6.1.4** **P1** Axios instance: create with baseURL, timeout, default headers
+- [ ] **6.1.5** **P2** Axios request interceptor: attach Authorization: Bearer <token> automatically
+- [ ] **6.1.6** **P2** Axios response interceptor: catch 401 → trigger refresh → retry original request
+- [ ] **6.1.7** **P2** Token refresh queue: hold parallel 401s while refresh is in-flight
+- [ ] **6.1.8** **P0** TanStack Query: QueryClient setup, useQuery, useMutation, queryClient
+- [ ] **6.1.9** **P1** queryKey conventions — stable keys prevent over-fetching
+- [ ] **6.1.10** **P1** invalidateQueries — trigger refetch after create/update/delete
+- [ ] **6.1.11** **P2** Optimistic updates: update UI immediately, rollback on error
+- [ ] **6.1.12** **P2** Global error boundary for unhandled API errors
 
 **Added from the transition roadmap**
 
-- [ ] **6.1.A1** Explain an end to end request from React through the API to PostgreSQL and back.
+- [ ] **6.1.A1** **P0** Explain an end to end request from React through the API to PostgreSQL and back.
 
 **15–20 minute practice idea:** Load one API resource in React and show loading, success, and error states.
 
@@ -1405,12 +1409,12 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 6.2 Auth flow in React
 
-- [ ] **6.2.1** Token storage decision: httpOnly cookie (server sets) vs memory state
-- [ ] **6.2.2** Auth context: createContext + useReducer — global user state
-- [ ] **6.2.3** Protected route component: read auth context, redirect if null
-- [ ] **6.2.4** Redirect after login: useLocation() → state.from → navigate back
-- [ ] **6.2.5** Silent refresh on app load: call /auth/refresh to restore session
-- [ ] **6.2.6** Logout: clear tokens + queryClient.clear() + redirect to /login
+- [ ] **6.2.1** **P0** Token storage decision: httpOnly cookie (server sets) vs memory state
+- [ ] **6.2.2** **P1** Auth context: createContext + useReducer — global user state
+- [ ] **6.2.3** **P0** Protected route component: read auth context, redirect if null
+- [ ] **6.2.4** **P2** Redirect after login: useLocation() → state.from → navigate back
+- [ ] **6.2.5** **P2** Silent refresh on app load: call /auth/refresh to restore session
+- [ ] **6.2.6** **P0** Logout: clear tokens + queryClient.clear() + redirect to /login
 
 **15–20 minute practice idea:** Draw the login, refresh, protected route, and logout states.
 
@@ -1418,17 +1422,17 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 6.3 Portfolio & GitHub
 
-- [ ] **6.3.1** README must-haves: what it does, tech stack, local setup, live demo link
-- [ ] **6.3.2** Loom demo video: 2–3 min walkthrough — record this before applying
-- [ ] **6.3.3** GitHub profile README (special username/username repo)
-- [ ] **6.3.4** Pin 3 repos: Phase 3 API, Phase 4 with auth, capstone fullstack app
-- [ ] **6.3.5** Contribution graph: aim for visible activity during learning period
-- [ ] **6.3.6** Swagger link in README — shows you think about API consumers
-- [ ] **6.3.7** Live demo URL in repo description — hiring managers click this first
+- [ ] **6.3.1** **P0** README must-haves: what it does, tech stack, local setup, live demo link
+- [ ] **6.3.2** **P2** Loom demo video: 2–3 min walkthrough — record this before applying
+- [ ] **6.3.3** **P2** GitHub profile README (special username/username repo)
+- [ ] **6.3.4** **P2** Pin 3 repos: Phase 3 API, Phase 4 with auth, capstone fullstack app
+- [ ] **6.3.5** **P2** Contribution graph: aim for visible activity during learning period
+- [ ] **6.3.6** **P2** Swagger link in README — shows you think about API consumers
+- [ ] **6.3.7** **P0** Live demo URL in repo description — hiring managers click this first
 
 **Added from the transition roadmap**
 
-- [ ] **6.3.A1** Write a short case study that shows a problem, choices, and result.
+- [ ] **6.3.A1** **P0** Write a short case study that shows a problem, choices, and result.
 
 **15–20 minute practice idea:** Improve one project README with setup steps and a screenshot.
 
@@ -1446,13 +1450,13 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 6.4 CV & job hunt in Poland
 
-- [ ] **6.4.1** CV keywords: NestJS, Node.js, TypeScript, PostgreSQL, Prisma, Docker, REST API, JWT, React
-- [ ] **6.4.2** LinkedIn headline: 'Fullstack Developer | React + Node.js | Warsaw'
-- [ ] **6.4.3** No Fluff Jobs filters: TypeScript, Node.js, Junior/Mid, Warsaw + Remote
-- [ ] **6.4.4** JustJoin.IT: search fullstack + Node.js, filter by experience level
-- [ ] **6.4.5** Application volume target: 5–10 per week minimum
-- [ ] **6.4.6** Cover note (2–3 sentences max): why this company, what you built relevant to them
-- [ ] **6.4.7** Referrals: Warsaw tech meetups — Node.js Poland, WarsawJS
+- [ ] **6.4.1** **P0** CV keywords: NestJS, Node.js, TypeScript, PostgreSQL, Prisma, Docker, REST API, JWT, React
+- [ ] **6.4.2** **P2** LinkedIn headline: 'Fullstack Developer | React + Node.js | Warsaw'
+- [ ] **6.4.3** **P1** No Fluff Jobs filters: TypeScript, Node.js, Junior/Mid, Warsaw + Remote
+- [ ] **6.4.4** **P1** JustJoin.IT: search fullstack + Node.js, filter by experience level
+- [ ] **6.4.5** **P0** Application volume target: 5–10 per week minimum
+- [ ] **6.4.6** **P2** Cover note (2–3 sentences max): why this company, what you built relevant to them
+- [ ] **6.4.7** **P2** Referrals: Warsaw tech meetups — Node.js Poland, WarsawJS
 
 **15–20 minute practice idea:** Rewrite one CV bullet to describe a concrete technical result.
 
@@ -1460,16 +1464,16 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 ### 6.5 Interview preparation
 
-- [ ] **6.5.1** Event loop: explain call stack → microtask queue → macrotask queue with example
-- [ ] **6.5.2** NestJS DI: explain how the IoC container resolves providers by type
-- [ ] **6.5.3** JWT: explain header.payload.signature + why short-lived access tokens exist
-- [ ] **6.5.4** Database indexes: explain B-tree index and when you'd add one
-- [ ] **6.5.5** N+1 problem: what it is + how Prisma include solves it
-- [ ] **6.5.6** REST vs GraphQL: over-fetching, under-fetching, caching tradeoffs
-- [ ] **6.5.7** CORS: why browsers enforce same-origin + how Access-Control headers solve it
-- [ ] **6.5.8** System design basics: load balancer, caching layer, message queue concepts
-- [ ] **6.5.9** Live coding: LeetCode Easy — arrays, strings, hashmaps, two pointers
-- [ ] **6.5.10** Behavioral: 3 STAR stories — a hard technical problem, a collaboration, a mistake you made
+- [ ] **6.5.1** **P0** Event loop: explain call stack → microtask queue → macrotask queue with example
+- [ ] **6.5.2** **P0** NestJS DI: explain how the IoC container resolves providers by type
+- [ ] **6.5.3** **P0** JWT: explain header.payload.signature + why short-lived access tokens exist
+- [ ] **6.5.4** **P1** Database indexes: explain B-tree index and when you'd add one
+- [ ] **6.5.5** **P1** N+1 problem: what it is + how Prisma include solves it
+- [ ] **6.5.6** **P2** REST vs GraphQL: over-fetching, under-fetching, caching tradeoffs
+- [ ] **6.5.7** **P1** CORS: why browsers enforce same-origin + how Access-Control headers solve it
+- [ ] **6.5.8** **P2** System design basics: load balancer, caching layer, message queue concepts
+- [ ] **6.5.9** **P1** Live coding: LeetCode Easy — arrays, strings, hashmaps, two pointers
+- [ ] **6.5.10** **P0** Behavioral: 3 STAR stories — a hard technical problem, a collaboration, a mistake you made
 
 **15–20 minute practice idea:** Explain one concept aloud for two minutes, then note where you hesitated.
 

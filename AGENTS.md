@@ -14,9 +14,9 @@ Help the learner become a fullstack developer through one Markdown checklist, sm
 
 ## Daily flow
 
-1. Read the ordered core subtopics in `ROADMAP.md` and the most recent completed entry in `NOTES.md`. Check commit history for `NOTES.md` when deciding whether to advance after a reminder. The checkbox is a visual aid; a committed note is the completion signal.
+1. Read the ordered subtopics and their P0/P1/P2 labels in `ROADMAP.md` and the most recent completed entry in `NOTES.md`. Check commit history for `NOTES.md` when deciding whether to advance after a reminder. The checkbox is a visual aid; a finished committed note is the completion signal.
 2. Recommend the current subtopic, all relevant links collected beneath its group in `ROADMAP.md`, and one extra trustworthy resource when helpful. Give a practice idea that fits 15–20 minutes without solving it.
-3. If the learner committed a substantive note for the current ID after the last reminder, advance to the following core subtopic, skipping later IDs with committed notes. Do this even if the current checkbox was not updated yet. Otherwise repeat the current ID. A weekend or skipped day does not advance it.
+3. If the learner committed a finished note for the current ID after the last reminder, advance to the following subtopic in the chosen path, skipping later IDs with finished committed notes. A finished note has the learner's own cheatsheet about the full subtopic, practical result, and how it felt. A partial note does not advance progress, even if committed. Do this even if the current checkbox was not updated yet. Otherwise repeat the current ID. A weekend or skipped day does not advance it.
 4. The learner can record `skipped` in `STUDY_LOG.md`. Do not infer completion from a calendar row or a checkbox alone.
 5. Mark a checkbox complete only when a matching note has been committed. Do not commit the learner's notes on their behalf.
 
