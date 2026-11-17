@@ -25,9 +25,11 @@ The 321 core subtopics below come from the supplied curriculum, in its original 
 
 - [ ] **[1.1.1](NOTES.md#topic-111)** **P0** Full request/response lifecycle — from the server's perspective
   - DNS before the HTTP request: domain-to-IP resolution, delegation, A records, and TTL caching. Practice: [Mess With DNS](https://messwithdns.net/).
+  - DNS self-check: [Wizard Zines DNS questions](https://questions.wizardzines.com/dns.html).
 - [ ] **1.1.2** **P0** HTTP methods: GET, POST, PUT, PATCH, DELETE — what each one means semantically
 - [ ] **1.1.3** **P0** HTTP headers: Content-Type, Authorization, Accept, CORS headers
 - [ ] **1.1.4** **P0** Status codes you send: 200, 201, 204, 400, 401, 403, 404, 409, 422, 500
+  - Visual memory aids: [HTTP Cats](https://http.cat/) and [HTTP Status Dogs](https://httpstatusdogs.com/).
 - [ ] **1.1.5** **P1** Request body formats: JSON, form-urlencoded, multipart/form-data
 - [ ] **1.1.6** **P0** URL anatomy: protocol, host, pathname, query string, fragment
 
